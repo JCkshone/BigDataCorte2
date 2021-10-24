@@ -120,5 +120,14 @@ Si observamos en la pagina web mensionada anteriormente, al utilizar el inspecto
 
 ![image](https://user-images.githubusercontent.com/19766554/138575781-effc8f03-df2d-45da-94b3-2e04f4c8de10.png)
 
+ #### Si esta informacion se desea subir o usar tambien se dejo una seccion con el siguiente codigo, el cual construye el archivo .json con toda la informacion
+ 
+  ```sh
+  with io.open('president_data.json', 'w', encoding='utf-8') as f:
+    f.write(json.dumps(final_data, ensure_ascii=False))
+```
+
+![image](https://user-images.githubusercontent.com/19766554/138575942-6fc61811-6cad-425d-9e27-6eab43bfde1e.png)
+
 ## Referencias 
 - [Archivo.ipynb](https://github.com/JCkshone/BigDataCorte2/blob/main/Untitled.ipynb) con la ejecucion
